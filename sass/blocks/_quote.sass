@@ -1,0 +1,180 @@
+.quote 
+  background-color: rgba($primary,0.6)
+  padding-top: 115px
+  padding-bottom: 100px
+  &-wrap 
+    width: 940px
+    margin: 0 auto
+  &-text 
+    display: block
+    width: max-content
+    max-width: 100%
+    margin: 0 auto
+    text-align: center 
+    font-size: 42px
+    line-height: 50px
+    font-weight: 600
+    position: relative
+    // &::before 
+    //   position: absolute
+    //   content: '“'
+    //   top: 5px
+    //   left: 30px
+    //   font-size: 76px
+    //   line-height: 50px 
+    //   color: $text2
+    // &::after
+    //   position: absolute
+    //   content: '”'
+    //   bottom: -5px 
+    //   right: 10px
+    //   font-size: 76px
+    //   line-height: 50px 
+    //   color: $text2
+    span.q 
+      font-size: 76px
+      line-height: 50px
+      color: $text2
+      font-weight: 500
+      display: inline-block
+      transform: translateY(13px)
+      // &:nth-child(1)
+      //   top: 5px
+      //   left: 35px
+      // &:nth-child(2)
+      //   bottom: -5px
+      //   right: 10px
+
+  &-author 
+    margin-top: 30px
+    margin-right: 30px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    .ic 
+      display: flex
+      align-items: center 
+      justify-content: flex-end
+      margin-right: 15px
+
+      .line 
+        width: 290px
+        height: 1px 
+        background-color: #fff
+      .circle 
+        width: 12px
+        height: 12px
+        border-radius: 50% 
+        background-color: #fff
+
+    .name 
+      font-size: 24px
+      line-height: 32px
+      color: $text2
+      font-weight: 500
+
+
+@media ( max-width: 1100px )
+  .quote 
+    &-wrap
+      width: 100% 
+
+    &-text 
+      font-size: 38px
+      line-height: 46px
+
+@media ( max-width: 960px )
+  .quote 
+    padding-top: 100px
+    padding-bottom: 90px
+    &-text 
+      font-size: 34px
+      line-height: 42px
+      .br 
+        display: block
+      span.q 
+        font-size: 46px
+        line-height: 0.2
+        transform: translateY(13px)
+
+    &-author 
+      margin-top: 30px
+      margin-right: 50px
+      .ic 
+        margin-right: 15px
+        .line 
+          width: 240px
+
+      .name 
+        font-size: 24px
+        line-height: 32px
+
+
+@media ( max-width: 800px )
+  .quote 
+    padding-top: 90px
+    padding-bottom: 80px
+    &-text 
+      .br 
+        display: none
+    &-author 
+      margin-top: 30px
+      margin-right: 00px
+      .ic 
+        margin-right: 15px
+        .line 
+          width: 240px
+
+      .name 
+        font-size: 18px
+        line-height: 25px
+@media ( max-width: 600px )
+  .quote 
+    padding-top: 80px
+    padding-bottom: 70px
+    &-text 
+      font-size: 30px
+      line-height: 36px
+      .br 
+        display: none
+      span.q 
+        font-size: 46px
+        line-height: 0.2
+        transform: translateY(10px)
+    &-author 
+      margin-top: 30px
+      margin-right: 00px
+      .ic 
+        margin-right: 15px
+        .line 
+          width: 160px
+
+      .name 
+        font-size: 18px
+        line-height: 25px
+
+@media ( max-width: 425px )
+  .quote 
+    padding-top: 60px
+    padding-bottom: 60px
+    &-text 
+      font-size: 28px
+      line-height: 34px
+    &-author 
+      .ic 
+        .line 
+          width: 130px
+
+      .name 
+        font-size: 14px
+        line-height: 20px
+@media ( max-width: 370px )
+  .quote 
+    &-text 
+      font-size: 27px
+      line-height: 34px
+@media ( max-width: 350px )
+  .quote 
+    &-text 
+      font-size: 28px
+      line-height: 34px

@@ -1,0 +1,126 @@
+* 
+  outline: none  !important
+  margin: 0
+  padding: 0
+  color: $text
+  box-sizing: border-box
+  outline: 0 !important
+  outline-offset: 0 !important
+  transition: 0 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  opacity: 1
+  font-family: 'Manrope', sans-serif
+  font-weight: 300
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-synthesis: none
+  -webkit-text-size-adjust: 100%
+
+
+@media screen and ( min-width: 768px  )
+  *
+    scrollbar-color: $primary #F6F7FA
+    scrollbar-width: none
+  ::-webkit-scrollbar 
+    width: 4px 
+    height: 2px 
+    opacity: 0
+    background-color: #F6F7FA
+
+  ::-webkit-scrollbar-thumb 
+    background-color: $primary
+    border-radius: 10px
+
+
+
+body
+  position: relative
+
+.main 
+  padding-top: 105px
+
+@media ( max-width: 1200px  )
+  .main 
+    padding-top: 100px
+ 
+@media ( max-width: 1100px  )
+  .main 
+    padding-top: 90px
+
+@media ( max-width: 425px  )
+  .main 
+    padding-top: 80px
+
+a 
+  transition: color 0.3s 
+  color: $text
+  text-decoration: none
+  &:hover,
+  &:focus,
+  &:active
+    color: $text2
+    transition: 0.3s 
+.wrap 
+  width: 1110px
+  margin: 0 auto
+
+.section 
+  padding: 70px 0
+  &-title
+    font-weight: 500
+    color: $text2
+    display: block
+    font-size: 28px
+    line-height: 34px
+    letter-spacing: 0.035em
+    margin-bottom: 50px 
+
+@media ( max-width: 1200px )
+  .wrap 
+    width: 1024px
+
+
+@media ( max-width: 1100px )
+  .wrap 
+    width: 900px
+
+
+@media ( max-width: 960px )
+  .wrap 
+    width: 768px
+
+
+@media ( max-width: 800px )
+  .wrap 
+    width: 90%
+  .section 
+    &-title 
+      font-size: 24px
+      line-height: 30px
+@media ( max-width: 425px )
+  .wrap 
+    width: 92%
+  .section 
+    padding-top: 40px
+    padding-bottom: 40px
+    &-title 
+      font-size: 22px
+      line-height: 28px
+.btn 
+  height: 46px
+  display: inline-flex
+  align-items: center 
+  justify-content: center 
+  background-color: $primary 
+  border-radius: 30px
+  padding: 0 30px
+  transition: 0.3s
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.02em
+  font-size: 18px
+  line-height: 25px
+  &:hover 
+    background-color: $text2
+    color: #fff
+    transition: 0.3s
