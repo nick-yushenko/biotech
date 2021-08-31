@@ -1,3 +1,12 @@
+
+// Анимация загрузки  
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(180deg)
+    
+// Список новостей на главной 
 .news-list 
   &-title 
     display: flex
@@ -42,7 +51,93 @@
       font-size: 18px
       line-height: 25px
 
+// Список всех новостей
+.news 
+  &-loader 
+    display: flex
+    justify-content: center 
+    margin-top: 30px
+    .loader 
+      display: flex
+      align-items: center 
+      justify-content: center  
 
+      animation: spin 1.5s linear infinite
+      transform-origin: center 
+
+  &-title 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .tags 
+      display: flex
+      align-items: center 
+      justify-content: flex-end
+
+      .tag 
+        display: block
+        border-radius: 50px
+        margin-left: 15px
+        font-size: 16px
+        line-height: 22px
+        padding: 10px 24px
+        background-color: #E8E8E8
+        &:first-child
+          margin-left: 0
+        &.current
+          color: #fff
+          background-color: $text2
+        &:hover 
+          color: #fff
+          background-color: $text2
+
+  &-wrap 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap 
+
+  &-item
+    display: flex
+    flex-direction: column 
+    width: calc(33% - 20px)
+    margin-bottom: 40px
+    &.bg 
+      padding: 24px
+      background-color: #F8F8F8
+    &.publish 
+      justify-content: space-between
+      .prov 
+        display: flex
+        align-items: center
+        img 
+          width: 40px
+          height: 40px
+          margin-right: 15px
+        span 
+          font-size: 14px
+          line-height: 20px
+    .img 
+      display: block 
+      width: 100%
+      height: 200px
+      margin-bottom: 20px 
+      img 
+        width: 100%
+        height: 100%
+        object-fit: cover 
+
+    .title 
+      font-weight: 500
+      margin-bottom: 10px
+      display: block
+      font-size: 18px
+      line-height: 25px
+
+    .date 
+      font-size: 18px
+      line-height: 25px 
+      font-weight: 300
+  
 @media ( max-width: 960px )
   .news-list
     &-item 
@@ -54,7 +149,12 @@
         
       .img 
         height: 160px
-
+  .news 
+    padding-top: 60px
+    padding-bottom: 60px
+    &-item 
+      width: calc( 50% - 15px )
+      margin-bottom: 30px
 @media ( max-width: 768px )
   .news-list
     padding-top: 40px
@@ -62,13 +162,29 @@
 
 @media ( max-width: 600px )
   .news-list
+
     &-item 
       width: 100%
+      &:nth-last-child(2)
+        margin-bottom: 40px
       .img 
         height: 160px
-
+  .news 
+    padding-top: 20px
+    padding-bottom: 40px
+    &-title 
+      align-items: flex-start
+      flex-direction: column
+      margin-bottom: 30px
+      margin-top: 40px
+      .tags 
+        margin-top: 15px
+    &-item 
+      width: 100%
+      margin-bottom: 30px
 @media ( max-width: 425px )
   .news-list
+    padding-top: 30px
     &-title 
       a 
         font-size: 16px
@@ -84,3 +200,15 @@
         line-height: 22px
       .img 
         height: 140px
+
+  .news 
+    &-item 
+      .img 
+        height: 160px
+      .title 
+        font-size: 16px
+        line-height: 22px
+
+      .date 
+        font-size: 16px
+        line-height: 22px
