@@ -1,1 +1,166 @@
-О Компании
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ОКА-Биотех</title>
+</head>
+
+<body>
+  <div class="menu" id="menu">
+    <div class="wrap">
+      <nav class="nav">
+        <a href="about.html">О компании</a>
+        <a href="news.html">Новости</a>
+        <a href="acadezine.html">Акадезин</a>
+        <a href="acid.html">Гиалуроновая кислота</a>
+      </nav>
+
+      <div class="lang">
+        <a href="#" class="ru">rus</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <nav class="nav">
+        <a href="about.html">О компании</a>
+        <a href="news.html">Новости</a>
+        <a href="acadezine.html">Акадезин</a>
+        <a href="acid.html">Гиалуроновая кислота</a>
+      </nav>
+
+      <div class="lang">
+        <a href="#" class="ru">rus</a>
+      </div>
+
+      <div class="burger js-burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <section class="section article about">
+      <div class="wrap">
+        <div class="crumbs">
+          <a href="news.html" class="crumbs-item">
+            О компании
+          </a>
+          <span class="crumbs-item delimiter">
+            >
+          </span>
+          <a href="about.html" class="crumbs-item">
+            Общие сведения
+          </a>
+        </div>
+        <div class="article-wrap">
+
+          <div class="article-sidebar about-sidebar">
+            <h2 class="about-title">О компании</h2>
+
+            <nav class="about-nav">
+              <a href="about.html" class="current">Общие сведения</a>
+              <a href="team.html">Команда </a>
+              <a href="tech.html">Техническая база </a>
+              <a href="vacancies.html">Вакансии </a>
+              <a href="contact.html">Контакты </a>
+            </nav>
+          </div>
+
+          <article class="article-body about-body">
+            <div class="article-text">
+              <p>
+                Компания &laquo;ОКА-Биотех&raquo; была основана в&nbsp;2014&nbsp;г. физическими лицами, в&nbsp;прошлом
+                сотрудниками ведущего
+                института в&nbsp;области генетики микроорганизмов&nbsp;&mdash; &laquo;ГосНИИгенетики&raquo;. Целью
+                компании является создание и
+                коммерциализация научных разработок в&nbsp;области микробного синтеза.
+              </p>
+              <p>
+                Включаясь в&nbsp;разработку на&nbsp;самых ранних ее&nbsp;стадиях, иногда только на&nbsp;стадии
+                лабораторного подтверждения
+                идеи проекта, ОКА-Биотех вкладывает в&nbsp;проект не&nbsp;только финансовые средства,
+                но&nbsp;и&nbsp;квалифицированный
+                профильный менеджмент, технологическое оборудование и&nbsp;опыт работы, необходимые для доведения
+                разработки
+                до&nbsp;промышленного внедрения.
+              </p>
+              <p>
+                В&nbsp;настоящее время компания &laquo;ОКА-Биотех&raquo; представляет собой хорошо оснащенную
+                научно-производственную
+                компанию с&nbsp;высокопрофессиональными сотрудниками. В&nbsp;арсенале компании все современные методы
+                микробной
+                биотехнологии: создание штаммов продуцентов методами генной инженерии, разработка технологий
+                ферментации, выделения и&nbsp;очистки целевых продуктов микробного синтеза.
+              </p>
+              <p>
+                Вместе с&nbsp;тем, в&nbsp;современной науке нельзя быть первыми во&nbsp;всем, поэтому ОКА-Биотех
+                сотрудничает с&nbsp;лучшими
+                научно-исследовательскими организациями страны: НИЦ &laquo;Курчатовский институт&raquo;&nbsp;&mdash;
+                ГосНИИгенетика, Институт
+                биоорганической химии&nbsp;им. академиков М.М. Шемякина и&nbsp;Ю.А. Овчинникова РАН и&nbsp;другими.
+              </p>
+              <p>
+                К&nbsp;актуальным проектам компании относятся технология получения акадезина и&nbsp;гиалуроновой
+                кислоты.
+              </p>
+            </div>
+         <!-- Если картинок больше 1, то на мобильной версии они попадают в слайдер, для этого их нужно продублировать здесь  -->
+
+         <div class="swiper article-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide article-slide">
+              <img src="img/about/about-img-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide article-slide">
+              <img src="img/about/about-img-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide article-slide">
+              <img src="img/news/article/article-img-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="article-pagination"></div>
+
+        </div>
+            <!-- класс two - 2 картинки, класс one - 1 картинка  -->
+            <!-- Ширину картинок, если их 2, можно указать через аттрибут style="width: 30%" -->
+            <div class="article-img two">
+              <img src="img/about/about-img-1.jpg" alt="" style="width: 30%">
+              <img src="img/about/about-img-2.jpg" alt="" style="width: 64%">
+            </div>
+
+   
+            
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span> 2021 &laquo;Центр трансфера биотехнологий ОКА-Биотех&raquo;</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

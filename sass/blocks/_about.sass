@@ -1,0 +1,79 @@
+.about
+  min-height: 60vh
+  &-sidebar
+    position: fixed
+    top: calc(105px + 70px)
+    left: calc((100% - 1110px)/2)
+    background-color: #fff
+  &-body
+    margin-left: auto
+  &-title
+    font-size: 32px
+    line-height: 44px
+    font-weight: 500
+    margin-bottom: 30px
+
+  &-nav
+    a
+      display: block
+      margin-bottom: 10px
+      font-size: 16px
+      line-height: 20px
+      padding-bottom: 5px
+      padding-top: 5px
+      &.current
+        font-weight: 500
+        color: $text !important
+      &:last-child
+        margin-bottom: 0
+
+
+  .article
+    &-text, 
+    &-img 
+      width: 100%
+
+    &-text 
+      p 
+        &:first-child
+          margin-top: 0
+    &-body 
+      // margin-top: -10px
+
+
+@media ( max-width: 1200px )
+  .about
+    &-sidebar
+      top: calc(100px + 70px)
+      left: calc((100% - 1024px)/2)
+
+@media ( max-width: 1100px )
+  .about
+    &-sidebar
+      top: calc(90px + 70px)
+      left: calc((100% - 900px)/2)
+  
+
+@media ( max-width: 960px )
+  .about
+    padding-top: 20px
+    &-title
+      font-size: 28px
+    .article-body 
+      margin-top: 20px
+
+@media ( max-width: 425px )
+  .about 
+    padding-bottom: 20px
+    .crumbs 
+      width: 92%
+      margin: 0 auto
+
+    .article-text, 
+    .article-img
+      width: 92%
+      margin: 0 auto
+
+
+
+      

@@ -40,18 +40,20 @@
       li 
         font-size: 18px
         line-height: 25px 
-        margin-bottom: 10px
-        padding-left: 25px
+        margin-bottom: 15px
+        // padding-left: 20px 
+        text-indent: 20px
         position: relative
+        display: block
         &::before
           position: absolute
           content: ''
           top: calc(25px / 2 - 4px)
-          left: 7px 
+          left: 0px 
           width: 8px 
           height: 8px
           border-radius: 50%
-          background-color: $text 
+          background-color: #404596
           opacity: 0.8
         &:last-child
           margin-bottom: 0
@@ -144,6 +146,7 @@
 @media ( max-width: 800px )
   .article 
     padding-top: 60px
+    padding-bottom: 60px
     &-text 
       p 
         font-size: 16px 
@@ -163,7 +166,6 @@
 @media ( max-width: 600px )
   .article 
     padding-top: 50px
-    padding-bottom: 60px
 
     &-text 
       width: 100%
@@ -174,7 +176,6 @@
 @media ( max-width: 425px )
   .article 
     padding-top: 40px
-    padding-bottom: 60px
     .wrap 
       width: 100%
     &-title, 
@@ -194,6 +195,11 @@
       display: block
       margin-top: 40px
       margin-bottom: 40px
+      &:last-child
+        margin-bottom: 0
+
+      &:first-child
+        margin-top: 0
 
     &-slide 
       height: 180px

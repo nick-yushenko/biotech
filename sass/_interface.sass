@@ -19,7 +19,7 @@
 
 @media screen and ( min-width: 768px  )
   *
-    scrollbar-color: $primary #F6F7FA
+    scrollbar-color: $text2 #F6F7FA
     scrollbar-width: none
   ::-webkit-scrollbar 
     width: 4px 
@@ -28,7 +28,7 @@
     background-color: #F6F7FA
 
   ::-webkit-scrollbar-thumb 
-    background-color: $primary
+    background-color: $text2
     border-radius: 10px
 
 
@@ -95,8 +95,8 @@ a
     width: 90%
   .section 
     &-title 
-      font-size: 24px
-      line-height: 30px
+      font-size: 24px !important
+      line-height: 30px !important
 @media ( max-width: 425px )
   .wrap 
     width: 92%
@@ -104,9 +104,10 @@ a
     padding-top: 40px
     padding-bottom: 40px
     &-title 
-      font-size: 22px
-      line-height: 28px
+      font-size: 22px !important
+      line-height: 28px !important
 .btn 
+  cursor: pointer
   height: 46px
   display: inline-flex
   align-items: center 
@@ -127,7 +128,16 @@ a
 
 
 .crumbs 
+  display: none
   &-item 
     color: #636363
     font-size: 16px
     line-height: 22px
+    &.delimiter
+      margin-left: 4px
+      margin-right: 4px
+      display: inline-block
+
+@media ( max-width: 960px )
+  .crumbs 
+    display: block
