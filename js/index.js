@@ -33,6 +33,23 @@ if (menu && burger) {
 
 
 
+const anchors = document.querySelectorAll('a.anchor')
+if (anchors)
+  anchors.forEach(function (item) {
+    item.addEventListener('click', function () {
+      let headerHeight = document.querySelector('.header').clientHeight
+      let blockID = item.getAttribute('href').substring(1)
+      let paddingTop = $('#' + blockID).css('padding-top')
+      paddingTop = paddingTop.substr(0, paddingTop.length - 2)
+      $("html, body").animate({
+        scrollTop: $('#' + blockID).offset().top + Number(paddingTop) - 10 - headerHeight + "px"
+      }, {
+        duration: 500,
+        easing: "swing"
+      });
+    })
+  })
+
 
 let articleSlideOffset = (window.innerWidth - window.innerWidth * 0.92) / 2
 const articleSlider = new Swiper('.article-slider', {
