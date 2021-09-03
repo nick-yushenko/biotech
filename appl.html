@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ОКА-Биотех</title>
+</head>
+
+<body>
+  <div class="js-templates">
+    <div class="nav-block js-menu-nav_aboutBl opened">
+      <a href="about.html">Общие сведения</a>
+      <a href="team.html">Команда</a>
+      <a href="tech.html">Техническая база</a>
+      <a href="vacancies.html">Вакансии</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+  </div>
+  <div class="menu" id="menu">
+    <div class="wrap">
+      <nav class="nav">
+        <span class="js-menu-nav_about">О компании</span>
+        <div class="nav-block js-menu-nav_aboutBl">
+          <a href="about.html">Общие сведения</a>
+          <a href="team.html">Команда</a>
+          <a href="tech.html">Техническая база</a>
+          <a href="vacancies.html">Вакансии</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <a href="news.html">Новости</a>
+        <a href="acadezine.html">Акадезин</a>
+        <a href="acid.html">Гиалуроновая кислота</a>
+      </nav>
+
+      <div class="lang">
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng ">eng</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <nav class="nav">
+        <a href="about.html">О компании</a>
+        <a href="news.html">Новости</a>
+        <a href="acadezine.html">Акадезин</a>
+        <a href="acid.html">Гиалуроновая кислота</a>
+      </nav>
+
+      <div class="lang">
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng">eng</a>
+      </div>
+
+      <div class="burger js-burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <section class="section appl">
+      <div class="wrap">
+        <a href="vacancies.html" class="appl-back">
+          <img src="img/icons/back-icon.svg" alt="">
+          <span>
+            Назад
+          </span>
+        </a>
+
+        <div class="brif  contact-brif appl-brif">
+
+          <h2 class="section-title">
+            Отклик на вакансию “Бухгалтер на первичную документацию”
+          </h2>
+          <form action="#" class="brif-form" id="brifForm">
+
+            <div class="brif-block">
+              <div class="input-block">
+                <input type="text" placeholder="Как к вам обращаться" minlength="2" maxlength="80" name="name"
+                  autocomplete="off">
+              </div>
+              <div class="input-block">
+                <input type="email" placeholder="Контактный e-mail" name="email" autocomplete="off">
+              </div>
+              <div class="input-block">
+                <input type="text" class="phone" placeholder="Контактный телефон" minlength="18" name="phone"
+                  autocomplete="off">
+              </div>
+            </div>
+            <div class="brif-block">
+              <div class="input-block textarea">
+                <textarea name="message" maxlength="1000" minlength="10" cols="30" rows="10"
+                  placeholder="Напишите нам"></textarea>
+              </div>
+            </div>
+            <div class="brif-block submit">
+              <input type="submit" value="отправить" class=" form-submit btn disabled">
+
+              <label class="checkbox ">
+                <input type="checkbox" checked="checked" name="privacy">
+                <span class="checkbox__text">
+                  Нажимая кнопку &laquo;отправить&raquo;, Вы&nbsp;соглашаетесь на&nbsp;обработку персональных
+                  данных.
+                </span>
+              </label>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+
+
+    <div class="wrap">
+      <span> 2021 &laquo;Центр трансфера биотехнологий ОКА&nbsp;-&nbsp;Биотех&raquo;</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

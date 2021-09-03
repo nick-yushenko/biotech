@@ -12,17 +12,35 @@
 </head>
 
 <body>
+
+  <div class="js-templates">
+    <div class="nav-block js-menu-nav_aboutBl opened">
+      <a href="about.html">Общие сведения</a>
+      <a href="team.html">Команда</a>
+      <a href="tech.html">Техническая база</a>
+      <a href="vacancies.html">Вакансии</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+  </div>
   <div class="menu" id="menu">
     <div class="wrap">
       <nav class="nav">
-        <a href="about.html">О компании</a>
+        <span class="js-menu-nav_about">О компании</span>
+        <div class="nav-block js-menu-nav_aboutBl">
+          <a href="about.html">Общие сведения</a>
+          <a href="team.html">Команда</a>
+          <a href="tech.html">Техническая база</a>
+          <a href="vacancies.html">Вакансии</a>
+          <a href="contact.html">Контакты</a>
+        </div>
         <a href="news.html">Новости</a>
         <a href="acadezine.html">Акадезин</a>
         <a href="acid.html">Гиалуроновая кислота</a>
       </nav>
 
       <div class="lang">
-        <a href="#" class="ru">rus</a>
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng ">eng</a>
       </div>
     </div>
   </div>
@@ -40,7 +58,8 @@
       </nav>
 
       <div class="lang">
-        <a href="#" class="ru">rus</a>
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng">eng</a>
       </div>
 
       <div class="burger js-burger">
@@ -48,6 +67,7 @@
       </div>
     </div>
   </header>
+
 
 
   <main class="main">
@@ -180,6 +200,7 @@
       </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>

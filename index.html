@@ -12,17 +12,34 @@
 </head>
 
 <body>
+  <div class="js-templates">
+    <div class="nav-block js-menu-nav_aboutBl opened">
+      <a href="about.html">Общие сведения</a>
+      <a href="team.html">Команда</a>
+      <a href="tech.html">Техническая база</a>
+      <a href="vacancies.html">Вакансии</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+  </div>
   <div class="menu" id="menu">
     <div class="wrap">
       <nav class="nav">
-        <a href="about.html">О компании</a>
+        <span class="js-menu-nav_about">О компании</span>
+        <div class="nav-block js-menu-nav_aboutBl">
+          <a href="about.html">Общие сведения</a>
+          <a href="team.html">Команда</a>
+          <a href="tech.html">Техническая база</a>
+          <a href="vacancies.html">Вакансии</a>
+          <a href="contact.html">Контакты</a>
+        </div>
         <a href="news.html">Новости</a>
         <a href="acadezine.html">Акадезин</a>
         <a href="acid.html">Гиалуроновая кислота</a>
       </nav>
 
       <div class="lang">
-        <a href="#" class="ru">rus</a>
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng ">eng</a>
       </div>
     </div>
   </div>
@@ -40,7 +57,8 @@
       </nav>
 
       <div class="lang">
-        <a href="#" class="ru">rus</a>
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng">eng</a>
       </div>
 
       <div class="burger js-burger">
@@ -161,13 +179,59 @@
   </main>
 
   <footer class="footer">
+
+    <section class="brif section">
+      <div class="wrap">
+
+        <h2 class="section-title">
+          Напишите нам
+        </h2>
+        <form action="#" class="brif-form" id="brifForm">
+
+          <div class="brif-block">
+            <div class="input-block">
+              <input type="text" placeholder="Как к вам обращаться" minlength="2" maxlength="80" name="name" autocomplete="off">
+            </div>
+            <div class="input-block">
+              <input type="email" placeholder="Контактный e-mail" name="email" autocomplete="off">
+            </div>
+            <div class="input-block">
+              <input type="text" class="phone" placeholder="Контактный телефон" minlength="18" name="phone" autocomplete="off">
+            </div>
+          </div>
+          <div class="brif-block">
+            <div class="input-block textarea">
+              <textarea name="message" maxlength="1000" minlength="10" cols="30" rows="10"
+                placeholder="Напишите нам"></textarea>
+            </div>
+          </div>
+          <div class="brif-block submit">
+            <input type="submit" value="отправить" class=" form-submit btn disabled">
+
+            <label class="checkbox ">
+              <input type="checkbox" checked="checked" name="privacy">
+              <span class="checkbox__text">
+                Нажимая кнопку &laquo;отправить&raquo;, Вы&nbsp;соглашаетесь на&nbsp;обработку персональных данных.
+              </span>
+            </label>
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+
     <div class="wrap">
-      <span> 2021 &laquo;Центр трансфера биотехнологий ОКА-Биотех&raquo;</span>
+      <span> 2021 &laquo;Центр трансфера биотехнологий ОКА&nbsp;-&nbsp;Биотех&raquo;</span>
     </div>
   </footer>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/index.js"></script>
 
 </body>

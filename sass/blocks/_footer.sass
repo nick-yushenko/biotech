@@ -12,3 +12,117 @@
     font-size: 18px
     line-height: 25px 
     text-align: center
+
+
+.brif 
+  padding: 100px 0
+  transform: translateY(1px)
+  background-color: $primary
+
+  .wrap 
+    display: block
+
+  .section-title 
+    margin-bottom: 35px
+    text-transform: uppercase
+  &-form 
+    display: flex
+    justify-content: space-between
+
+  &-block 
+    display: flex
+    flex-direction: column 
+    justify-content: space-between
+
+    width: calc( 33% - 20px )
+    &.submit
+      justify-content: center
+    .input-block 
+      margin-bottom: 15px
+      width: 100%
+      min-width: 100%
+      &:last-child
+        margin-bottom: 0
+
+    .btn 
+      width: 200px 
+      border: 1px solid $text 
+      margin-bottom: 20px
+      &:hover 
+        border-color: $text2
+
+      &.disabled 
+        border-color: #636363 !important
+
+@media  ( max-width: 1100px )
+  .brif 
+    &-block 
+      width: calc( 31% - 15px )
+      &.submit 
+        width: calc( 38% - 15px  )
+
+@media  ( max-width: 960px )
+  .brif 
+    padding: 70px 0
+    &-form 
+      flex-wrap: wrap
+    &-block 
+      width: calc( 50% - 15px )
+      &.submit 
+        margin-top: 60px
+        width: 80%
+
+@media  ( max-width: 800px )
+  .brif 
+    padding: 70px 0
+    &-form 
+      flex-wrap: wrap
+    &-block 
+      width: calc( 50% - 15px )
+      &.submit 
+        margin-top: 60px
+        width: 100%
+
+
+
+@media  ( max-width: 600px )
+  .brif 
+    padding: 60px 0
+    .section-title 
+      margin-bottom: 30px
+    &-form 
+      flex-wrap: wrap
+    &-block 
+      width: 100%
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+      .input-block 
+        textarea
+          height: 100%
+          
+        &.textarea 
+          height: 55px
+      &.submit 
+        margin-top: 15px
+        width: 100%
+
+@media  ( max-width: 425px )
+  .brif 
+    padding: 60px 0
+    .section-title 
+      margin-bottom: 30px
+    &-form 
+      flex-wrap: wrap
+    &-block 
+      width: 100%
+      margin-bottom: 15px
+      .input-block 
+        textarea
+          height: 100%
+          
+        &.textarea 
+          height: 50px
+      &.submit 
+        margin-top: 15px
+        width: 100%

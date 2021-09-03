@@ -8,23 +8,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="css/style.min.css">
   <title>ОКА-Биотех</title>
 </head>
 
 <body>
+  <div class="js-templates">
+    <div class="nav-block js-menu-nav_aboutBl opened">
+      <a href="about.html">Общие сведения</a>
+      <a href="team.html">Команда</a>
+      <a href="tech.html">Техническая база</a>
+      <a href="vacancies.html">Вакансии</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+  </div>
   <div class="menu" id="menu">
     <div class="wrap">
       <nav class="nav">
-        <a href="about.html">О компании</a>
+        <span class="js-menu-nav_about">О компании</span>
+        <div class="nav-block js-menu-nav_aboutBl">
+          <a href="about.html">Общие сведения</a>
+          <a href="team.html">Команда</a>
+          <a href="tech.html">Техническая база</a>
+          <a href="vacancies.html">Вакансии</a>
+          <a href="contact.html">Контакты</a>
+        </div>
         <a href="news.html">Новости</a>
         <a href="acadezine.html">Акадезин</a>
         <a href="acid.html">Гиалуроновая кислота</a>
       </nav>
 
       <div class="lang">
-        <a href="#" class="ru">rus</a>
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng ">eng</a>
       </div>
     </div>
   </div>
@@ -42,7 +59,8 @@
       </nav>
 
       <div class="lang">
-        <a href="#" class="ru">rus</a>
+        <a href="#" class="ru current">rus</a>
+        <a href="#" class="eng">eng</a>
       </div>
 
       <div class="burger js-burger">
@@ -118,32 +136,36 @@
                 кислоты.
               </p>
             </div>
-         <!-- Если картинок больше 1, то на мобильной версии они попадают в слайдер, для этого их нужно продублировать здесь  -->
+            <!-- Если картинок больше 1, то на мобильной версии они попадают в слайдер, для этого их нужно продублировать здесь  -->
 
-         <div class="swiper article-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide article-slide">
-              <img src="img/about/about-img-1.jpg" alt="">
-            </div>
-            <div class="swiper-slide article-slide">
-              <img src="img/about/about-img-2.jpg" alt="">
-            </div>
-            <div class="swiper-slide article-slide">
-              <img src="img/news/article/article-img-2.jpg" alt="">
-            </div>
-          </div>
-          <div class="article-pagination"></div>
+            <div class="swiper article-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide article-slide">
+                  <img src="img/about/about-img-1.jpg" alt="" data-src="img/about/about-img-1@3.png"
+                  data-fancybox>
+                </div>
+                <div class="swiper-slide article-slide">
+                  <img src="img/about/about-img-2.jpg" alt="" data-src="img/about/about-img-2@3.png"
+                  data-fancybox>
+                </div>
+                <div class="swiper-slide article-slide">
+                  <img src="img/news/article/article-img-2.jpg" alt="" data-src="img/news/article/article-img-2.jpg"
+                  data-fancybox>
+                </div>
+              </div>
+              <div class="article-pagination"></div>
 
-        </div>
-            <!-- класс two - 2 картинки, класс one - 1 картинка  -->
-            <!-- Ширину картинок, если их 2, можно указать через аттрибут style="width: 30%" -->
+            </div>
+            <!-- data-src атрибут для просмотра картинки. зедс нужно укзаать путь к картинке в высоком разрешении -->
             <div class="article-img two">
-              <img src="img/about/about-img-1.jpg" alt="" style="width: 30%">
-              <img src="img/about/about-img-2.jpg" alt="" style="width: 64%">
+              <img src="img/about/about-img-1.jpg" alt="" style="width: 30%" data-src="img/about/about-img-1@3.png"
+                data-fancybox>
+              <img src="img/about/about-img-2.jpg" alt="" style="width: 64%" data-src="img/about/about-img-2@3.png"
+                data-fancybox>
             </div>
 
-   
-            
+
+
           </article>
 
 
@@ -154,11 +176,16 @@
 
   <footer class="footer">
     <div class="wrap">
-      <span> 2021 &laquo;Центр трансфера биотехнологий ОКА-Биотех&raquo;</span>
+      <span> 2021 &laquo;Центр трансфера биотехнологий ОКА&nbsp;-&nbsp;Биотех&raquo;</span>
     </div>
   </footer>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/index.js"></script>
 
 </body>
